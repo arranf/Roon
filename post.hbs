@@ -3,7 +3,7 @@
 {{#post}}
 
     {{#if image}}
-        <div id="feature_image" class="horz show">
+        <div id="feature_image">
             <div class="inner" style="background-image: url('{{image}}')">
                 <img src="{{image}}">
             </div>
@@ -36,7 +36,7 @@
         </div>
 
     {{#author}}
-        <footer role="contentinfo">
+        <footer class="post-footer" role="contentinfo">
 
             <div class="vcard">
                 <a href="/rss/" id="btn_feed" class="btn" title="Feed">
