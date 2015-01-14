@@ -1744,7 +1744,7 @@ a:hover {
 article #home_link {
 	float: left;
 	font-size: 20px;
-	margin-top: 7px;
+	margin-top: 10px;
 }
 
 article .hgroup {
@@ -1753,9 +1753,12 @@ article .hgroup {
 	margin-left: 50px;
 }
 
-article > header h1,
-article > header .meta {
+article > header h1 {
 	margin: 0;
+}
+
+article > header .meta {
+	margin-top: 10px;
 }
 
 body.user>header h1 {
