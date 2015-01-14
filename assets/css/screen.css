@@ -1724,7 +1724,13 @@ body.user > header {
 	background-color: #ededee;
 }
 
-a:hover {
+.meta,
+.meta a {
+	color: #a4adb6;
+}
+a:hover,
+.meta a:hover,
+body.user article .readmore:hover {
 	color: #6ba7a5;
 }
 
