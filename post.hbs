@@ -12,7 +12,7 @@
 
     <article role="main" class="{{#if image}}image{{/if}}">
         <header class="group">
-            <a href="{{@blog.url}}" id="home_link">«</a>
+            <a href="/" id="home_link">«</a>
             <div class="hgroup">
             <h1>{{title}}</h1>
             <div class="meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time></div>
@@ -45,7 +45,7 @@
                 </a>
 
                 {{#if image}}
-                <a href="{{@blog.url}}" class="photo">
+                <a href="/" class="photo">
                     <span style="background-image: url('{{image}}');">
                         <img src="{{image}}" alt="{{name}}">
                     </span>
@@ -53,7 +53,7 @@
                 {{/if}}
 
                 <div class="details">
-                    <h4><a href="{{@blog.url}}" class="url n">{{name}}</a></h4>
+                    <h4><a href="/" class="url n">{{name}}</a></h4>
                     <span>danny &#64; iyware.com</span><br/>
                     <span>License: <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span><br/>
                     {{#if location}}{{location}}{{/if}}
