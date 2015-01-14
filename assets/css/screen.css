@@ -75,7 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 @font-face {
   font-family: 'Open Sans';
   src: url("/assets/fonts/openSans-light-italic.woff2") format("woff2"),
-       url("/assets/fonts/openSans-light-itlaic.woff") format("woff");
+       url("/assets/fonts/openSans-light-italic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
 }
