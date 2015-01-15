@@ -375,7 +375,6 @@ body.noimage {
 #feature_image #feature_image_helper .bg {
     width: 100%;
     height: 100%;
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=20);
     opacity: 0.2
 }
 #feature_image.vert .inner, #feature_image.square .inner {
@@ -389,7 +388,6 @@ body.noimage {
     background-image: none
 }
 #feature_image.show .inner {
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1
 }
 #feature_image.show .inner img {
@@ -400,7 +398,6 @@ body.noimage {
 }
 #feature_image.show.vert #feature_image_helper, #feature_image.show.square #feature_image_helper {
     background-color: #909396;
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1
 }
 article {
@@ -573,7 +570,6 @@ article .text span.roon-img.show {
     background-image: none
 }
 article .text span.roon-img.show img {
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1
 }
 article .text strong .roon-img {
@@ -789,7 +785,6 @@ body.user article .image-holder.show {
 }
 body.user article .image-holder.show .inner {
     visibility: visible;
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1
 }
 body.user article .meta {
@@ -825,7 +820,6 @@ body.user article .readmore:hover {
     color: #21272d
 }
 body.user article:hover .readmore {
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1
 }
 body.user article .text {
@@ -1173,7 +1167,6 @@ body>iframe {
     display: none
 }
 body.touch.user article .readmore {
-    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1
 }
 @media only screen and (max-width: 1200px) {
@@ -1191,11 +1184,9 @@ body.touch.user article .readmore {
 }
 @media only screen and (max-width: 860px), screen and (max-height: 600px) {
     #feature_image.show.vert #feature_image_helper .bg, #feature_image.show.square #feature_image_helper .bg, #feature_image.vert #feature_image_helper .bg, #feature_image.square #feature_image_helper .bg {
-        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
         opacity: 1
     }
     #feature_image.show.vert .inner, #feature_image.show.square .inner, #feature_image.vert .inner, #feature_image.square .inner {
-        filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
         opacity: 0
     }
 }
