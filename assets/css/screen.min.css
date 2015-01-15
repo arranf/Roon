@@ -306,9 +306,7 @@ hr {
 .btn {
     display: inline-block;
     vertical-align: middle;
-    *vertical-align: auto;
     zoom: 1;
-    *display: inline;
     padding: 20px 30px;
     margin: 0;
     font-family: "Open Sans", sans-serif;
@@ -397,9 +395,7 @@ article>header h1 {
 article>header .meta {
     display: inline-block;
     vertical-align: middle;
-    *vertical-align: auto;
     zoom: 1;
-    *display: inline
 }
 article>header .count {
     font-size: 14px;
@@ -474,9 +470,7 @@ article .text pre code {
 article .text code {
     display: inline-block;
     vertical-align: middle;
-    *vertical-align: auto;
     zoom: 1;
-    *display: inline;
     max-width: 100%;
     overflow-x: auto;
     padding: 0 5px;
@@ -631,26 +625,20 @@ article>menu {
 article>menu iframe {
     display: inline-block;
     vertical-align: middle;
-    *vertical-align: auto;
     zoom: 1;
-    *display: inline;
     margin: -31px 8px 0px 6px
 }
 article>menu a.btn {
     display: inline-block;
     vertical-align: middle;
-    *vertical-align: auto;
     zoom: 1;
-    *display: inline;
     margin: 14px 15px;
     padding: 20px 14px
 }
 article>menu a.btn span {
     display: inline-block;
     vertical-align: middle;
-    *vertical-align: auto;
     zoom: 1;
-    *display: inline;
     line-height: 0;
     font-size: 34px
 }
@@ -686,9 +674,7 @@ body.user>header {
 body.user>header .wrap {
     display: inline-block;
     vertical-align: middle;
-    *vertical-align: auto;
     zoom: 1;
-    *display: inline;
     text-align: center;
     margin: 0 auto
 }
@@ -763,9 +749,7 @@ body.user article time a {
 body.user article .readmore {
     display: inline-block;
     vertical-align: middle;
-    *vertical-align: auto;
     zoom: 1;
-    *display: inline;
     font-size: 13px;
     line-height: 1em;
     color: #a4adb6;
@@ -853,9 +837,7 @@ body.user>#load_more {
 #post_nav a span {
     display: inline-block;
     vertical-align: middle;
-    *vertical-align: auto;
     zoom: 1;
-    *display: inline;
     font-size: 30px;
     color: #c4c6c8;
     vertical-align: middle;
@@ -944,9 +926,7 @@ body>footer #btn_feed:hover, .post-footer #btn_feed:hover {
 body>footer div.vcard, .post-footer div.vcard {
     display: inline-block;
     vertical-align: middle;
-    *vertical-align: auto;
     zoom: 1;
-    *display: inline;
     width: 50%;
     min-height: 100px
 }
@@ -1010,9 +990,7 @@ body>footer .details h4 a, .post-footer .details h4 a {
 body>footer #user_bio, .post-footer #user_bio {
     display: inline-block;
     vertical-align: middle;
-    *vertical-align: auto;
     zoom: 1;
-    *display: inline;
     width: 49%
 }
 body>footer #user_bio .inner, .post-footer #user_bio .inner {
@@ -1086,9 +1064,7 @@ body>.no-posts [data-icon]:before {
 #share_modal .inner {
     display: inline-block;
     vertical-align: middle;
-    *vertical-align: auto;
     zoom: 1;
-    *display: inline;
     height: 200px;
     margin: -100px auto 0 auto;
     background-color: #fff;
@@ -1303,9 +1279,7 @@ body.touch.user article .readmore {
         margin-top: 0;
         display: inline-block;
         vertical-align: middle;
-        *vertical-align: auto;
         zoom: 1;
-        *display: inline
     }
     html[dir=rtl] body.user>#blog_badge span {
         margin-left: 0;
