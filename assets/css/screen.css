@@ -1346,7 +1346,6 @@ pre[data-line] {
 	margin-top: 1em; /* Same as .prism’s padding-top */
 	background: hsla(24, 20%, 50%,.08);
 	background: linear-gradient(left, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-	pointer-events: none;
 	line-height: inherit;
 	white-space: pre;
 }
