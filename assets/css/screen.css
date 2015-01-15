@@ -667,54 +667,7 @@ article .text div.gist {
 article .text div.gist .line-numbers, article .text div.gist pre {
     font-size: 14px;
     line-height: 1.4em;
-}
-article>menu {
-    text-align: center;
-    margin: 30px auto 62px auto
-}
-article>menu iframe {
-    display: inline-block;
-    vertical-align: middle;
-    zoom: 1;
-    margin: -31px 8px 0px 6px
-}
-article>menu .btn {
-    display: inline-block;
-    vertical-align: middle;
-    zoom: 1;
-    margin: 14px 15px;
-    padding: 20px 14px
-}
-article>menu .btn span {
-    display: inline-block;
-    vertical-align: middle;
-    zoom: 1;
-    line-height: 0;
-    font-size: 34px
-}
-article>menu .btn strong {
-    display: none
-}
-#btn_share {
-    font-weight: normal;
-    height: 54px;
-    width: 54px;
-    padding: 0;
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
-}
-#btn_share span {
-    padding-top: 27px;
-    margin-left: 2px
-}
-#btn_comment {
-    padding-right: 22px
-}
-#btn_comment span {
-    font-weight: normal;
-    margin-right: 6px;
-    padding-top: 2px
-}
-article.image {
+}article.image {
     margin-top: 60px
 }
 .user>header {
@@ -1108,7 +1061,7 @@ body>.no-posts [data-icon]:before {
     text-align: right;
     direction: rtl
 }
-html[dir=rtl] body>header *, html[dir=rtl] article>menu #btn_comment, html[dir=rtl] #post_nav a {
+html[dir=rtl] body>header *, html[dir=rtl] #post_nav a {
     direction: rtl
 }
 html[dir=rtl] body>.btn.nav span,
@@ -1135,15 +1088,6 @@ html[dir=rtl] #blog_badge span {
 html[dir=rtl] #home_link {
     margin-left: 10px;
     margin-right: 0
-}
-html[dir=rtl] #btn_comment {
-    padding-left: 22px;
-    padding-right: 20px
-}
-html[dir=rtl] #btn_comment span {
-    margin-left: 6px;
-    margin-right: 0;
-    direction: ltr
 }
 html[dir=rtl] #post_nav nav {
     text-align: right
