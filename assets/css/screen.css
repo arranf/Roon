@@ -620,7 +620,8 @@ article .text div.gist {
 article .text div.gist .line-numbers, article .text div.gist pre {
     font-size: 14px;
     line-height: 1.4em;
-}article.image {
+}
+article.image {
     margin-top: 60px
 }
 body.user>header {
