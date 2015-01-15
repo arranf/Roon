@@ -46,43 +46,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block
 }
 @font-face {
-    font-family: 'Pictos Custom';
+    font-family: "Pictos Custom";
     src: url("/assets/fonts/pictos_custom.woff2") format("woff2"),
          url("/assets/fonts/pictos_custom.woff") format("woff");
     font-weight: normal;
     font-style: normal
 }
-
 @font-face {
-    font-family: 'Inconsolata';
+    font-family: "Inconsolata";
     src: url("/assets/fonts/inconsolata.woff2") format("woff2"),
          url("/assets/fonts/inconsolata.woff") format("woff");
     font-weight: normal;
     font-style: normal
 }
-
 @font-face {
-  font-family: 'Open Sans';
-  src: local('Open Sans Light'),
-  	   local('OpenSans-Light'),
-  	   url("/assets/fonts/openSans-light.woff2") format("woff2"),
+  font-family: "Open Sans";
+  src: url("/assets/fonts/openSans-light.woff2") format("woff2"),
        url("/assets/fonts/openSans-light.woff") format("woff");
-
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("/assets/fonts/openSans-light-italic.woff2") format("woff2"),
        url("/assets/fonts/openSans-light-italic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
 }
-
 body {
     font-family: "Open Sans", sans-serif;
-    font-weight: 300;
 }
 .highlight .c {
     color: #8e908c
@@ -291,18 +283,17 @@ body::selection {
 }
 a {
     text-decoration: none;
-    outline: none;
     transition-property: background-color, color;
     transition-duration: 0.2s
 }
-a:hover {
-    color: #6ba7a5;
-}
 a:active {
-    outline: none
+	outline: medium none;
+}
+a:hover {
+    color: #6ba7a5
 }
 [data-icon]:before {
-    font-family: 'Pictos Custom';
+    font-family: "Pictos Custom";
     content: attr(data-icon)
 }
 hr {
@@ -326,8 +317,7 @@ hr {
 }
 .btn:hover {
     background-color: #6ba7a5;
-    color: #fff;
-	text-decoration: none;
+    color: #fff
 }
 body>header {
     border-top-width: 4px;
@@ -339,68 +329,31 @@ body>header h1 {
     font-size: 36px;
     font-weight: bold
 }
-body>header h1 a {
-    color: #21272d
-}
 body.noimage {
     border-top-width: 4px;
     border-top-style: solid;
 }
+
 #feature_image {
     position: relative;
     width: 100%;
     height: 60%;
 }
-#feature_image .inner,
-#feature_image_helper {
+#feature_image .inner {
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
-    transition-property: opacity;
-    transition-duration: 0.5s;
-    opacity: 0
-}
-#feature_image .inner,
-feature_image_helper .bg {
-    transition-property: opacity;
-    transition-duration: 0.5s;
-    background-color: transparent;
-    background-repeat: no-repeat;
+    left: 0;
+    background-size: cover;
     background-position: center center;
-    background-size: cover
+    background-repeat: no-repeat;
 }
-#feature_image_helper {
-    display: none
-}
-#feature_image_helper .bg {
-    width: 100%;
-    height: 100%;
-    opacity: 0.2
-}
-#feature_image .inner {
-    background-size: contain;
-    transition-duration: 0.2s
-}
-#feature_image_helper {
-    display: block
-}
-#feature_image.show {
-    background-image: none
-}
-#feature_image.show .inner {
-    opacity: 1
-}
-#feature_image.show .inner img {
+#feature_image img {
     width: 0;
     height: 0;
     visibility: hidden;
-    position: absolute
-}
-#feature_image_helper {
-    background-color: #909396;
-    opacity: 1
+    position: absolute;
 }
 article {
     margin: 65px auto 0 auto;
@@ -408,8 +361,8 @@ article {
     max-width: 680px;
     text-align: left
 }
-#home_link {
-    font-family: 'Pictos Custom';
+article #home_link {
+    font-family: "Pictos Custom";
     color: #909396;
     margin-right: 10px;
 	margin-top: 10px;
@@ -420,7 +373,7 @@ article {
     border-radius: 20px;
 	float: left;
 }
-#home_link:hover {
+article #home_link:hover {
     color: #21272d;
     background-color: #ededee
 }
@@ -433,7 +386,7 @@ article>header {
     text-rendering: optimizeLegibility
 }
 article>header h1 {
-	margin: 0;
+    margin-top: 20px;
     font-weight: bold;
     font-size: 40px;
     line-height: 1.2em;
@@ -445,6 +398,7 @@ article>header .meta {
     vertical-align: middle;
     zoom: 1;
 	margin-top: 10px;
+
 }
 article>header .count {
     font-size: 14px;
@@ -669,27 +623,27 @@ article .text div.gist .line-numbers, article .text div.gist pre {
 }article.image {
     margin-top: 60px
 }
-.user>header {
+body.user>header {
     position: relative;
 	margin-bottom: 0;
 	padding-bottom: 60px;
 	background-color: #ededee;
 }
-.user>header .wrap {
+body.user>header .wrap {
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
     text-align: center;
     margin: 0 auto
 }
-.user>header h1 {
+body.user>header h1 {
 	padding: 80px 0 10px;
     font-weight: normal
 }
-.user>header hr {
+body.user>header hr {
     margin: 0 25%
 }
-.user article {
+body.user article {
     position: relative;
     text-align: center;
     max-width: inherit;
@@ -697,29 +651,28 @@ article .text div.gist .line-numbers, article .text div.gist pre {
     margin-bottom: 80px;
     border-bottom: 2px solid #f7f7f7
 }
-.user article:last-of-type {
+body.user article:last-of-type {
     border-bottom: none;
     margin-bottom: 40px
 }
-.user article header {
+body.user article header {
     text-align: left;
     margin: 0 auto;
     margin-bottom: 15px;
     max-width: 680px
 }
-.user article header h1 {
+body.user article header h1 {
     margin: 0;
     font-size: 32px
 }
-.user article .image-holder {
+body.user article .image-holder {
     height: 300px;
     margin: 0 auto 30px auto;
     overflow: hidden;
     max-width: 680px;
-    background: #909396 url(/assets/images/image-loading-dark-1a46c68c8e26a1a16a4ce8e4d75ec33b.gif) no-repeat center center;
     border-radius: 3px
 }
-.user article .image-holder .inner {
+body.user article .image-holder .inner {
     display: block;
     width: 100%;
     height: 100%;
@@ -728,24 +681,14 @@ article .text div.gist .line-numbers, article .text div.gist pre {
     background-position: center center;
     border-radius: 2px;
     background-size: cover;
+}
+body.user article .image-holder img {
+    width: 0;
+    height: 0;
     visibility: hidden;
-    opacity: 0;
-    transition-property: opacity, visibility;
-    transition-duration: 0.5s
+    position: absolute;
 }
-.user article .image-holder img {
-    display: block;
-    max-width: 100%;
-    visibility: hidden
-}
-.user article .image-holder.show {
-    background: #909396
-}
-.user article .image-holder.show .inner {
-    visibility: visible;
-    opacity: 1
-}
-.user article .meta {
+body.user article .meta {
     display: block;
     margin: 0 auto 20px auto;
     max-width: 680px;
@@ -754,13 +697,13 @@ article .text div.gist .line-numbers, article .text div.gist pre {
     color: #a4adb6;
     text-rendering: optimizeLegibility;
 }
-.user article .meta .count {
+body.user article .meta .count {
     margin-left: 34px
 }
-.user article time a {
+body.user article time a {
     font-size: 14px;
 }
-.user article .readmore {
+body.user article .readmore {
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
@@ -774,50 +717,52 @@ article .text div.gist .line-numbers, article .text div.gist pre {
     transition-property: opacity, visibility, color;
     transition-duration: 0.5s
 }
-.user article .readmore:hover {
-    color: #6ba7a5;
+body.user article .readmore:hover {
+    color: #6ba7a5
 }
-.user article:hover .readmore {
+body.user article:hover .readmore {
     opacity: 1
 }
-.user article .text {
+body.user article .text {
     position: relative;
     text-align: left;
     margin: 0 auto;
     padding-bottom: 80px;
     max-width: 680px
 }
-.user article .text p {
+body.user article .text p {
     display: inline;
     line-height: 1.7em;
+    margin: 0 5px 0 0
 }
-.user article .text pre, .user article .text img, .user article .text table, .user article .text hr, .user article .text iframe, .user article .text object, .user article .text audio, .user article .text video, .user article .text embed, .user article .text h1, .user article .text h2, .user article .text h3, .user article .text h4, .user article .text h5, .user article .text h6, .user article .text div.gist { /* This keeps non-text stuff from displaying on article lists */
-    display: none
+body.user article .text pre, body.user article .text img, body.user article .text table, body.user article .text hr, body.user article .text iframe, body.user article .text object, body.user article .text audio, body.user article .text video, body.user article .text embed, body.user article .text h1, body.user article .text h2, body.user article .text h3, body.user article .text h4, body.user article .text h5, body.user article .text h6, body.user article .text div.gist {
+    display: none /* This rule is the poor man's formating for {{excerpt}} API */
 }
-.user article .text blockquote {
+body.user article .text blockquote {
     display: inline;
     padding: 0;
+    margin: 0 5px 0 0;
     border: none;
     font-size: inherit
 }
-.user article .text blockquote p {
+body.user article .text blockquote p {
     font-size: inherit
 }
-.user article.featured {
+body.user article.featured {
     padding-left: 0;
     padding-right: 0
 }
-.user article.featured>* {
+body.user article.featured>* {
     padding-left: 30px;
     padding-right: 30px;
     max-width: 780px
 }
-.user article.featured .image-holder {
+body.user article.featured .image-holder {
     padding: 0;
     height: 500px;
     max-width: 980px
 }
-#load_more {
+body.user>#load_more {
     margin-bottom: 100px
 }
 #post_nav {
@@ -856,51 +801,51 @@ article .text div.gist .line-numbers, article .text div.gist pre {
     transition-property: color;
     transition-duration: 0.2s
 }
-#post_next {
+#post_nav #post_next {
     float: left
 }
-#post_next span {
+#post_nav #post_next span {
     margin-right: 2px;
     transform: rotate(180deg) translate(0, 6px)
 }
-#post_prev {
+#post_nav #post_prev {
     position: relative;
     float: right;
     margin-top: 1px;
     padding: 5px 30px 5px 0
 }
-#post_prev span {
+#post_nav #post_prev span {
     position: absolute;
     right: 0;
     margin-top: -5px
 }
-body>.btn.nav {
+body>a.btn.nav {
     position: relative;
     font-size: 16px;
     margin: 0 10px 70px 10px;
     padding: 15px 28px
 }
-body>.btn.nav span {
+body>a.btn.nav span {
     position: absolute;
     top: 11px;
     font-size: 25px;
     margin-top: 1px
 }
-body>.btn.nav.next {
+body>a.btn.nav.next {
     padding-right: 46px
 }
-body>.btn.nav.next span {
+body>a.btn.nav.next span {
     right: 14px;
     margin-top: 1px
 }
-body>.btn.nav.prev {
+body>a.btn.nav.prev {
     padding-left: 46px
 }
-body>.btn.nav.prev span {
+body>a.btn.nav.prev span {
     left: 14px;
     transform: rotate(180deg) translate(0, 5px)
 }
-body>.btn.nav.loading {
+body>a.btn.nav.loading {
     color: transparent
 }
 body>footer, .post-footer {
@@ -915,7 +860,7 @@ body>footer>.inner, .post-footer>.inner {
     padding: 0 30px;
     max-width: 680px
 }
-#btn_feed {
+body>footer #btn_feed, .post-footer #btn_feed {
     position: absolute;
     top: -18px;
     left: 50%;
@@ -928,22 +873,21 @@ body>footer>.inner, .post-footer>.inner {
     padding: 9px 9px 7px 10px;
     font-weight: normal
 }
-#btn_feed strong {
+body>footer #btn_feed strong, .post-footer #btn_feed strong {
     display: none
 }
-#btn_feed:hover {
+body>footer #btn_feed:hover, .post-footer #btn_feed:hover {
     background-color: #ededee;
     color: #21272d
 }
-.vcard {
+body>footer div.vcard, .post-footer div.vcard {
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
     width: 50%;
     min-height: 100px
 }
-vcard .given-name,
-.vcard .family-name {
+body>footer div.vcard span.given-name, body>footer div.vcard span.family-name, .post-footer div.vcard span.given-name, .post-footer div.vcard span.family-name {
     white-space: nowrap
 }
 body>footer .photo, .post-footer .photo {
@@ -1000,13 +944,13 @@ body>footer .details h4, .post-footer .details h4 {
 body>footer .details h4 a, .post-footer .details h4 a {
     color: #21272d
 }
-#user_bio {
+body>footer #user_bio, .post-footer #user_bio {
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
     width: 49%
 }
-#user_bio .inner {
+body>footer #user_bio .inner, .post-footer #user_bio .inner {
     padding-left: 20px;
     line-height: 1.6em;
     color: #a4adb6
@@ -1037,7 +981,7 @@ body>footer .details h4 a, .post-footer .details h4 a {
     left: 12px;
 
 }
-.user #blog_badge {
+body.user #blog_badge {
     transition-property: none
 }
 body>.no-posts {
@@ -1056,18 +1000,15 @@ body>.no-posts p {
 body>.no-posts [data-icon]:before {
     font-size: 130px;
     color: #e8e8e9
-}html[dir=rtl] article .text, html[dir=rtl] article .text *, html[dir=rtl] article .meta, html[dir=rtl] article .time, html[dir=rtl] article>header, html[dir=rtl] article header *, html[dir=rtl] body>.btn.nav, html[dir=rtl] body>footer *, html[dir=rtl] .post-footer, html[dir=rtl] .post-footer * {
+}
+html[dir=rtl] article .text, html[dir=rtl] article .text *, html[dir=rtl] article .meta, html[dir=rtl] article .time, html[dir=rtl] article>header, html[dir=rtl] article header *, html[dir=rtl] body>a.btn.nav, html[dir=rtl] body>footer *, html[dir=rtl].post-footer, html[dir=rtl].post-footer * {
     text-align: right;
     direction: rtl
 }
 html[dir=rtl] body>header *, html[dir=rtl] #post_nav a {
     direction: rtl
 }
-html[dir=rtl] body>.btn.nav span,
-html[dir=rtl] #btn_feed span,
-html[dir=rtl] #btn_feed span,
-html[dir=rtl] #post_nav a span,
-html[dir=rtl] #home_link {
+html[dir=rtl] body>a.btn.nav span, html[dir=rtl] body>footer #btn_feed span, html[dir=rtl] .post-footer #user_profile>#btn_feed span, html[dir=rtl] #post_nav a span, html[dir=rtl] article>header a#home_link {
     direction: ltr;
     unicode-bidi: bidi-override
 }
@@ -1084,29 +1025,28 @@ html[dir=rtl] #blog_badge span {
     margin-left: 0;
     margin-right: 17px
 }
-html[dir=rtl] #home_link {
+html[dir=rtl] article>header a#home_link {
     margin-left: 10px;
     margin-right: 0
-}
-html[dir=rtl] #post_nav nav {
+}html[dir=rtl] #post_nav nav {
     text-align: right
 }
-html[dir=rtl] #post_prev {
+html[dir=rtl] #post_nav nav #post_prev {
     float: none
 }
-html[dir=rtl] #post_next {
+html[dir=rtl] #post_nav nav #post_next {
     padding-top: 4px;
     margin-top: -4px
 }
-html[dir=rtl] #post_next span {
+html[dir=rtl] #post_nav nav #post_next span {
     float: left;
     margin-top: -5px;
     margin-right: 6px
 }
-html[dir=rtl] body>.btn.nav.next span {
+html[dir=rtl] body>a.btn.nav.next span {
     transform: rotate(180deg) translate(0, 5px)
 }
-html[dir=rtl] body>.btn.nav.prev span {
+html[dir=rtl] body>a.btn.nav.prev span {
     transform: rotate(0deg) translate(0, 0)
 }
 html[dir=rtl] #blog_badge {
@@ -1116,35 +1056,35 @@ html[dir=rtl] #blog_badge {
 body>iframe {
     display: none
 }
-.touch.user article .readmore {
+body.touch.user article .readmore {
     opacity: 1
 }
 @media only screen and (max-width: 1200px) {
-    .user article.feature .wrap {
+    body.user article.feature .wrap {
         padding-top: 25%
     }
-    .user article.feature.square .wrap, .user article.feature.vert .wrap {
+    body.user article.feature.square .wrap, body.user article.feature.vert .wrap {
         padding-top: 64%
     }
 }
 @media only screen and (max-width: 980px) {
-    .user article.featured .image-holder {
+    body.user article.featured .image-holder {
         border-radius: 0
     }
 }
 @media only screen and (max-width: 860px), screen and (max-height: 600px) {
-    #feature_image_helper .bg {
+    #feature_image.show.vert #feature_image_helper .bg, #feature_image.show.square #feature_image_helper .bg, #feature_image.vert #feature_image_helper .bg, #feature_image.square #feature_image_helper .bg {
         opacity: 1
     }
-    #feature_image .inner {
+    #feature_image.show.vert .inner, #feature_image.show.square .inner, #feature_image.vert .inner, #feature_image.square .inner {
         opacity: 0
     }
 }
 @media only screen and (max-height: 800px) {
-    .user article.feature .wrap {
+    body.user article.feature .wrap {
         padding-top: 20%
     }
-    .user article.feature.vert .container .wrap, .user article.feature.square .container .wrap {
+    body.user article.feature.vert .container .wrap, body.user article.feature.square .container .wrap {
         padding-top: 30%
     }
 }
@@ -1155,7 +1095,7 @@ body>iframe {
     }
 }
 @media only screen and (max-height: 600px) {
-    .user article.featured .image-holder {
+    body.user article.featured .image-holder {
         height: 400px
     }
 }
@@ -1168,42 +1108,42 @@ body>iframe {
         padding: 48px 20px 40px 20px;
         font-size: 28px
     }
-    .user>header {
+    body.user>header {
         margin-bottom: 65px
     }
-    .user>header h1 {
+    body.user>header h1 {
         padding-top: 70px
     }
-    .user article:first-of-type {
+    body.user article:first-of-type {
         margin-top: 60px
     }
-    .user article.feature {
-        margin-top: 0px
+    body.user article.feature {
+        margin-top: 0px 
     }
-    .user article.feature .wrap {
+    body.user article.feature .wrap {
         background: linear-gradient(rgba(33, 39, 45, 0.1) 5%, rgba(33, 39, 45, 0.85) 75%)
     }
-    .user article .image-holder {
+    body.user article .image-holder {
         height: 240px
     }
-    .user article.featured .image-holder {
+    body.user article.featured .image-holder {
         height: 400px
     }
-    .user article header h1 {
+    body.user article header h1 {
         font-size: 24px
     }
     article .text {
         line-height: 1.6em
     }
-    .user article .text {
+    body.user article .text {
         line-height: 1.5em;
         font-size: 16px
     }
-    .user article time {
+    body.user article time {
         font-size: 13px;
         bottom: -15px
     }
-    .user article.feature h1 a {
+    body.user article.feature h1 a {
         font-size: 34px
     }
     #post_nav {
@@ -1216,47 +1156,47 @@ body>iframe {
         margin-right: auto;
         float: none
     }
-    #post_next {
+    #post_nav #post_next {
         text-align: left;
         margin-bottom: 20px
     }
-    #post_prev {
+    #post_nav #post_prev {
         text-align: right;
         position: relative;
         padding-right: 30px;
         padding-bottom: 5px;
         padding-top: 4px
     }
-    #post_prev span {
+    #post_nav #post_prev span {
         top: -1px;
         margin-top: 0;
         display: inline-block;
         vertical-align: middle;
         zoom: 1;
     }
-    html[dir=rtl] .user>#blog_badge span {
+    html[dir=rtl] body.user>#blog_badge span {
         margin-left: 0;
         margin-right: 12px
     }
-    html[dir=rtl] .user>#blog_badge {
+    html[dir=rtl] body.user>#blog_badge {
         left: 10px;
         right: inherit
     }
-    #user_bio, #user_profile {
+    body>footer #user_bio, body>footer #user_profile, .post-footer #user_bio, .post-footer #user_profile {
         display: block;
         width: inherit
     }
-    #user_bio .inner, #user_profile .inner {
+    body>footer #user_bio .inner, body>footer #user_profile .inner, .post-footer #user_bio .inner, .post-footer #user_profile .inner {
         padding-left: 0
     }
-    body>footer .vcard, .post-footer .vcard {
+    body>footer div.vcard, body>footer div.vcard, .post-footer div.vcard, .post-footer div.vcard {
         display: block;
         width: inherit
     }
-    #user_bio {
+    body>footer #user_bio, .post-footer #user_bio {
         margin-top: 30px
     }
-    #user_bio p {
+    body>footer #user_bio p, .post-footer #user_bio p {
         padding-left: 0
     }
 }
@@ -1309,41 +1249,41 @@ body>iframe {
     article.image {
         margin-top: 30px
     }
-    .user article {
+    body.user article {
         margin-top: 45px;
         margin-bottom: 30px
     }
-    .user article .image-holder {
+    body.user article .image-holder {
         height: 180px
     }
-    .user article.featured .image-holder {
+    body.user article.featured .image-holder {
         height: 300px
     }
-    .user article .text {
+    body.user article .text {
         padding-bottom: 40px
     }
-    .user article .text ul, .user article .text ol, .user article .text pre, .user article .text img, .user article .text table, .user article .text dl, .user article .text hr, .user article .text>div {
+    body.user article .text ul, body.user article .text ol, body.user article .text pre, body.user article .text img, body.user article .text table, body.user article .text dl, body.user article .text hr, body.user article .text>div {
         margin-bottom: 20px
     }
-    .user article .text iframe {
+    body.user article .text iframe {
         margin-bottom: 20px
     }
-    .user article .text object {
+    body.user article .text object {
         margin-top: 20px
     }
-    .user article:last-of-type {
+    body.user article:last-of-type {
         margin-bottom: 60px
     }
-    .user article.feature {
+    body.user article.feature {
         margin-top: 0
     }
-    .user article.feature:first-of-type {
+    body.user article.feature:first-of-type {
         margin-top: 0
     }
-    .user article.feature .inner {
+    body.user article.feature .inner {
         padding: 0 20px
     }
-    .user article.feature .wrap {
+    body.user article.feature .wrap {
         background: linear-gradient(rgba(33, 39, 45, 0.25) 0%, rgba(33, 39, 45, 0.9) 75%)
     }
     #blog_badge {
@@ -1369,7 +1309,7 @@ body>iframe {
     body>footer>.inner {
         padding: 0 20px
     }
-    .user>#load_more {
+    body.user>#load_more {
         margin-bottom: 60px;
         padding: 15px 25px
     }
@@ -1379,44 +1319,28 @@ body>iframe {
         display: block;
         margin-top: 15px
     }
-    .noimage article {
+    body.noimage article {
         margin-top: 24px
     }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-    #feature_image, .user article.feature, .user article .image-holder {
-        background-image: url(/assets/images/image-loading-dark@2x-01d400ba8728300455deb837c451d3ea.gif);
-        background-size: 34px 34px
-    }
-    article .text span.roon-img {
-        background-image: url(/assets/images/image-loading-light@2x-5d07f26751af5a375b5e517559fa9f29.gif);
-        background-size: 34px 34px
-    }
-}
-
 
 /* CUSTOM */
-
 
 .group:after { /* clearfix */
   content: "";
   display: table;
   clear: both;
 }
-
 .meta, /* make tags look like dates */
 .meta a {
 	color: #a4adb6;
 }
-
 .meta a:hover { /* need to reapply a:hover color */
 	color: #6ba7a5;
 }
-
 .user footer { /* gray footer on homepage */
 	background-color: #ededee;
 }
-
 article .hgroup { /* layout home button 'breadcrumb' on articles */
 	border-left: 1px solid #ededee;
 	padding-left: 20px;
@@ -1424,6 +1348,7 @@ article .hgroup { /* layout home button 'breadcrumb' on articles */
 }
 
 /* PRISM */
+
 /* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+css-extras+clike+javascript+php+php-extras+scss+bash+sql+http+ini+apacheconf+less+markdown&plugins=line-highlight+show-language */
 /**
  * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
@@ -1434,7 +1359,7 @@ article .hgroup { /* layout home button 'breadcrumb' on articles */
 code[class*="language-"],
 pre[class*="language-"] {
 	color: black;
-	font-family: "Inconsolata", monospace;
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
@@ -1623,12 +1548,9 @@ pre[data-line] {
 	right: 0;
 	padding: inherit 0;
 	margin-top: 1em; /* Same as .prism’s padding-top */
-
 	background: hsla(24, 20%, 50%,.08);
 	background: linear-gradient(left, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-	
 	pointer-events: none;
-	
 	line-height: inherit;
 	white-space: pre;
 }
