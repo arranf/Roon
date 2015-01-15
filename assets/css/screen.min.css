@@ -293,6 +293,9 @@ a {
     -o-transition-duration: 0.2s;
     transition-duration: 0.2s
 }
+a:active {
+	outline: medium none;
+}
 a:hover {
     color: #6ba7a5
 }
