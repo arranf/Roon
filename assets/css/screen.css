@@ -5,7 +5,7 @@ a {
 
 /* Border at the top of the page */
 body>header,
-body.noimage {
+.noimage {
     border-color: #6ba7a5;
 }
 
@@ -342,7 +342,7 @@ body>header h1 {
 body>header h1 a {
     color: #21272d
 }
-body.noimage {
+.noimage {
     border-top-width: 4px;
     border-top-style: solid;
 }
@@ -717,27 +717,27 @@ article>menu #btn_comment span {
 article.image {
     margin-top: 60px
 }
-body.user>header {
+.user>header {
     position: relative;
 	margin-bottom: 0;
 	padding-bottom: 60px;
 	background-color: #ededee;
 }
-body.user>header .wrap {
+.user>header .wrap {
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
     text-align: center;
     margin: 0 auto
 }
-body.user>header h1 {
+.user>header h1 {
 	padding: 80px 0 10px;
     font-weight: normal
 }
-body.user>header hr {
+.user>header hr {
     margin: 0 25%
 }
-body.user article {
+.user article {
     position: relative;
     text-align: center;
     max-width: inherit;
@@ -745,21 +745,21 @@ body.user article {
     margin-bottom: 80px;
     border-bottom: 2px solid #f7f7f7
 }
-body.user article:last-of-type {
+.user article:last-of-type {
     border-bottom: none;
     margin-bottom: 40px
 }
-body.user article header {
+.user article header {
     text-align: left;
     margin: 0 auto;
     margin-bottom: 15px;
     max-width: 680px
 }
-body.user article header h1 {
+.user article header h1 {
     margin: 0;
     font-size: 32px
 }
-body.user article .image-holder {
+.user article .image-holder {
     height: 300px;
     margin: 0 auto 30px auto;
     overflow: hidden;
@@ -767,7 +767,7 @@ body.user article .image-holder {
     background: #909396 url(/assets/images/image-loading-dark-1a46c68c8e26a1a16a4ce8e4d75ec33b.gif) no-repeat center center;
     border-radius: 3px
 }
-body.user article .image-holder .inner {
+.user article .image-holder .inner {
     display: block;
     width: 100%;
     height: 100%;
@@ -781,19 +781,19 @@ body.user article .image-holder .inner {
     transition-property: opacity, visibility;
     transition-duration: 0.5s
 }
-body.user article .image-holder img {
+.user article .image-holder img {
     display: block;
     max-width: 100%;
     visibility: hidden
 }
-body.user article .image-holder.show {
+.user article .image-holder.show {
     background: #909396
 }
-body.user article .image-holder.show .inner {
+.user article .image-holder.show .inner {
     visibility: visible;
     opacity: 1
 }
-body.user article .meta {
+.user article .meta {
     display: block;
     margin: 0 auto 20px auto;
     max-width: 680px;
@@ -802,13 +802,13 @@ body.user article .meta {
     color: #a4adb6;
     text-rendering: optimizeLegibility;
 }
-body.user article .meta .count {
+.user article .meta .count {
     margin-left: 34px
 }
-body.user article time a {
+.user article time a {
     font-size: 14px;
 }
-body.user article .readmore {
+.user article .readmore {
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
@@ -822,52 +822,52 @@ body.user article .readmore {
     transition-property: opacity, visibility, color;
     transition-duration: 0.5s
 }
-body.user article .readmore:hover {
+.user article .readmore:hover {
     color: #6ba7a5;
 }
-body.user article:hover .readmore {
+.user article:hover .readmore {
     opacity: 1
 }
-body.user article .text {
+.user article .text {
     position: relative;
     text-align: left;
     margin: 0 auto;
     padding-bottom: 80px;
     max-width: 680px
 }
-body.user article .text p {
+.user article .text p {
     display: inline;
     line-height: 1.7em;
     margin: 0 5px 0 0
 }
-body.user article .text pre, body.user article .text img, body.user article .text table, body.user article .text hr, body.user article .text iframe, body.user article .text object, body.user article .text audio, body.user article .text video, body.user article .text embed, body.user article .text h1, body.user article .text h2, body.user article .text h3, body.user article .text h4, body.user article .text h5, body.user article .text h6, body.user article .text div.gist {
+.user article .text pre, .user article .text img, .user article .text table, .user article .text hr, .user article .text iframe, .user article .text object, .user article .text audio, .user article .text video, .user article .text embed, .user article .text h1, .user article .text h2, .user article .text h3, .user article .text h4, .user article .text h5, .user article .text h6, .user article .text div.gist {
     display: none !important
 }
-body.user article .text blockquote {
+.user article .text blockquote {
     display: inline;
     padding: 0;
     margin: 0 5px 0 0;
     border: none;
     font-size: inherit
 }
-body.user article .text blockquote p {
+.user article .text blockquote p {
     font-size: inherit
 }
-body.user article.featured {
+.user article.featured {
     padding-left: 0;
     padding-right: 0
 }
-body.user article.featured>* {
+.user article.featured>* {
     padding-left: 30px;
     padding-right: 30px;
     max-width: 780px
 }
-body.user article.featured .image-holder {
+.user article.featured .image-holder {
     padding: 0;
     height: 500px;
     max-width: 980px
 }
-body.user>#load_more {
+.user>#load_more {
     margin-bottom: 100px
 }
 #post_nav {
@@ -1086,7 +1086,7 @@ body>footer #user_bio .inner, .post-footer #user_bio .inner {
     left: 12px;
 
 }
-body.user #blog_badge {
+.user #blog_badge {
     transition-property: none
 }
 body>.no-posts {
@@ -1174,19 +1174,19 @@ html[dir=rtl] #blog_badge {
 body>iframe {
     display: none
 }
-body.touch.user article .readmore {
+.touch.user article .readmore {
     opacity: 1
 }
 @media only screen and (max-width: 1200px) {
-    body.user article.feature .wrap {
+    .user article.feature .wrap {
         padding-top: 25%
     }
-    body.user article.feature.square .wrap, body.user article.feature.vert .wrap {
+    .user article.feature.square .wrap, .user article.feature.vert .wrap {
         padding-top: 64%
     }
 }
 @media only screen and (max-width: 980px) {
-    body.user article.featured .image-holder {
+    .user article.featured .image-holder {
         border-radius: 0
     }
 }
@@ -1199,10 +1199,10 @@ body.touch.user article .readmore {
     }
 }
 @media only screen and (max-height: 800px) {
-    body.user article.feature .wrap {
+    .user article.feature .wrap {
         padding-top: 20%
     }
-    body.user article.feature.vert .container .wrap, body.user article.feature.square .container .wrap {
+    .user article.feature.vert .container .wrap, .user article.feature.square .container .wrap {
         padding-top: 30%
     }
 }
@@ -1213,7 +1213,7 @@ body.touch.user article .readmore {
     }
 }
 @media only screen and (max-height: 600px) {
-    body.user article.featured .image-holder {
+    .user article.featured .image-holder {
         height: 400px
     }
 }
@@ -1226,42 +1226,42 @@ body.touch.user article .readmore {
         padding: 48px 20px 40px 20px;
         font-size: 28px
     }
-    body.user>header {
+    .user>header {
         margin-bottom: 65px
     }
-    body.user>header h1 {
+    .user>header h1 {
         padding-top: 70px
     }
-    body.user article:first-of-type {
+    .user article:first-of-type {
         margin-top: 60px
     }
-    body.user article.feature {
+    .user article.feature {
         margin-top: 0px !important
     }
-    body.user article.feature .wrap {
+    .user article.feature .wrap {
         background: linear-gradient(rgba(33, 39, 45, 0.1) 5%, rgba(33, 39, 45, 0.85) 75%)
     }
-    body.user article .image-holder {
+    .user article .image-holder {
         height: 240px
     }
-    body.user article.featured .image-holder {
+    .user article.featured .image-holder {
         height: 400px
     }
-    body.user article header h1 {
+    .user article header h1 {
         font-size: 24px
     }
     article .text {
         line-height: 1.6em
     }
-    body.user article .text {
+    .user article .text {
         line-height: 1.5em;
         font-size: 16px
     }
-    body.user article time {
+    .user article time {
         font-size: 13px;
         bottom: -15px
     }
-    body.user article.feature h1 a {
+    .user article.feature h1 a {
         font-size: 34px
     }
     #post_nav {
@@ -1292,11 +1292,11 @@ body.touch.user article .readmore {
         vertical-align: middle;
         zoom: 1;
     }
-    html[dir=rtl] body.user>#blog_badge span {
+    html[dir=rtl] .user>#blog_badge span {
         margin-left: 0;
         margin-right: 12px
     }
-    html[dir=rtl] body.user>#blog_badge {
+    html[dir=rtl] .user>#blog_badge {
         left: 10px;
         right: inherit
     }
@@ -1367,41 +1367,41 @@ body.touch.user article .readmore {
     article.image {
         margin-top: 30px
     }
-    body.user article {
+    .user article {
         margin-top: 45px;
         margin-bottom: 30px
     }
-    body.user article .image-holder {
+    .user article .image-holder {
         height: 180px
     }
-    body.user article.featured .image-holder {
+    .user article.featured .image-holder {
         height: 300px
     }
-    body.user article .text {
+    .user article .text {
         padding-bottom: 40px
     }
-    body.user article .text ul, body.user article .text ol, body.user article .text pre, body.user article .text img, body.user article .text table, body.user article .text dl, body.user article .text hr, body.user article .text>div {
+    .user article .text ul, .user article .text ol, .user article .text pre, .user article .text img, .user article .text table, .user article .text dl, .user article .text hr, .user article .text>div {
         margin-bottom: 20px
     }
-    body.user article .text iframe {
+    .user article .text iframe {
         margin-bottom: 20px !important
     }
-    body.user article .text object {
+    .user article .text object {
         margin-top: 20px !important
     }
-    body.user article:last-of-type {
+    .user article:last-of-type {
         margin-bottom: 60px
     }
-    body.user article.feature {
+    .user article.feature {
         margin-top: 0
     }
-    body.user article.feature:first-of-type {
+    .user article.feature:first-of-type {
         margin-top: 0
     }
-    body.user article.feature .inner {
+    .user article.feature .inner {
         padding: 0 20px
     }
-    body.user article.feature .wrap {
+    .user article.feature .wrap {
         background: linear-gradient(rgba(33, 39, 45, 0.25) 0%, rgba(33, 39, 45, 0.9) 75%)
     }
     #blog_badge {
@@ -1427,7 +1427,7 @@ body.touch.user article .readmore {
     body>footer>.inner {
         padding: 0 20px
     }
-    body.user>#load_more {
+    .user>#load_more {
         margin-bottom: 60px;
         padding: 15px 25px
     }
@@ -1437,12 +1437,12 @@ body.touch.user article .readmore {
         display: block;
         margin-top: 15px
     }
-    body.noimage article {
+    .noimage article {
         margin-top: 24px
     }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-    #feature_image, body.user article.feature, body.user article .image-holder {
+    #feature_image, .user article.feature, .user article .image-holder {
         background-image: url(/assets/images/image-loading-dark@2x-01d400ba8728300455deb837c451d3ea.gif);
         background-size: 34px 34px
     }
