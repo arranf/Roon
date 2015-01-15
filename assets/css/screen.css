@@ -678,21 +678,21 @@ article>menu iframe {
     zoom: 1;
     margin: -31px 8px 0px 6px
 }
-article>menu a.btn {
+article>menu .btn {
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
     margin: 14px 15px;
     padding: 20px 14px
 }
-article>menu a.btn span {
+article>menu .btn span {
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
     line-height: 0;
     font-size: 34px
 }
-article>menu a.btn strong {
+article>menu .btn strong {
     display: none
 }
 article>menu #btn_share {
@@ -924,33 +924,33 @@ article.image {
     right: 0;
     margin-top: -5px
 }
-body>a.btn.nav {
+body>.btn.nav {
     position: relative;
     font-size: 16px;
     margin: 0 10px 70px 10px;
     padding: 15px 28px
 }
-body>a.btn.nav span {
+body>.btn.nav span {
     position: absolute;
     top: 11px;
     font-size: 25px;
     margin-top: 1px
 }
-body>a.btn.nav.next {
+body>.btn.nav.next {
     padding-right: 46px
 }
-body>a.btn.nav.next span {
+body>.btn.nav.next span {
     right: 14px;
     margin-top: 1px
 }
-body>a.btn.nav.prev {
+body>.btn.nav.prev {
     padding-left: 46px
 }
-body>a.btn.nav.prev span {
+body>.btn.nav.prev span {
     left: 14px;
     transform: rotate(180deg) translate(0, 5px)
 }
-body>a.btn.nav.loading {
+body>.btn.nav.loading {
     color: transparent
 }
 body>footer, .post-footer {
@@ -1105,14 +1105,14 @@ body>.no-posts p {
 body>.no-posts [data-icon]:before {
     font-size: 130px;
     color: #e8e8e9
-}html[dir=rtl] article .text, html[dir=rtl] article .text *, html[dir=rtl] article .meta, html[dir=rtl] article .time, html[dir=rtl] article>header, html[dir=rtl] article header *, html[dir=rtl] body>a.btn.nav, html[dir=rtl] body>footer *, html[dir=rtl] .post-footer, html[dir=rtl] .post-footer * {
+}html[dir=rtl] article .text, html[dir=rtl] article .text *, html[dir=rtl] article .meta, html[dir=rtl] article .time, html[dir=rtl] article>header, html[dir=rtl] article header *, html[dir=rtl] body>.btn.nav, html[dir=rtl] body>footer *, html[dir=rtl] .post-footer, html[dir=rtl] .post-footer * {
     text-align: right;
     direction: rtl
 }
 html[dir=rtl] body>header *, html[dir=rtl] article>menu #btn_comment, html[dir=rtl] #post_nav a {
     direction: rtl
 }
-html[dir=rtl] body>a.btn.nav span,
+html[dir=rtl] body>.btn.nav span,
 html[dir=rtl] #btn_feed span,
 html[dir=rtl] #btn_feed span,
 html[dir=rtl] #post_nav a span,
@@ -1133,15 +1133,15 @@ html[dir=rtl] #blog_badge span {
     margin-left: 0;
     margin-right: 17px
 }
-html[dir=rtl] article>header a#home_link {
+html[dir=rtl] article>header #home_link {
     margin-left: 10px;
     margin-right: 0
 }
-html[dir=rtl] article>menu a#btn_comment {
+html[dir=rtl] article>menu #btn_comment {
     padding-left: 22px;
     padding-right: 20px
 }
-html[dir=rtl] article>menu a#btn_comment span {
+html[dir=rtl] article>menu #btn_comment span {
     margin-left: 6px;
     margin-right: 0;
     direction: ltr
@@ -1161,10 +1161,10 @@ html[dir=rtl] #post_next span {
     margin-top: -5px;
     margin-right: 6px
 }
-html[dir=rtl] body>a.btn.nav.next span {
+html[dir=rtl] body>.btn.nav.next span {
     transform: rotate(180deg) translate(0, 5px)
 }
-html[dir=rtl] body>a.btn.nav.prev span {
+html[dir=rtl] body>.btn.nav.prev span {
     transform: rotate(0deg) translate(0, 0)
 }
 html[dir=rtl] #blog_badge {
