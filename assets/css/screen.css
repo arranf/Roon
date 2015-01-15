@@ -115,7 +115,6 @@ hr {
 .btn {
     display: inline-block;
     vertical-align: middle;
-    zoom: 1;
     padding: 20px 30px;
     margin: 0;
     font-family: "Open Sans", sans-serif;
@@ -203,7 +202,6 @@ article>header h1 {
 article>header .meta {
     display: inline-block;
     vertical-align: middle;
-    zoom: 1;
 	margin-top: 10px;
 
 }
@@ -280,7 +278,6 @@ article .text pre code {
 article .text code {
     display: inline-block;
     vertical-align: middle;
-    zoom: 1;
     max-width: 100%;
     overflow-x: auto;
     padding: 0 5px;
@@ -439,7 +436,6 @@ body.user>header {
 body.user>header .wrap {
     display: inline-block;
     vertical-align: middle;
-    zoom: 1;
     text-align: center;
     margin: 0 auto
 }
@@ -512,7 +508,6 @@ body.user article time a {
 body.user article .readmore {
     display: inline-block;
     vertical-align: middle;
-    zoom: 1;
     font-size: 13px;
     line-height: 1em;
     color: #a4adb6;
@@ -600,7 +595,6 @@ body.user>#load_more {
 #post_nav a span {
     display: inline-block;
     vertical-align: middle;
-    zoom: 1;
     font-size: 30px;
     color: #c4c6c8;
     vertical-align: middle;
@@ -689,7 +683,6 @@ body>footer #btn_feed:hover, .post-footer #btn_feed:hover {
 body>footer div.vcard, .post-footer div.vcard {
     display: inline-block;
     vertical-align: middle;
-    zoom: 1;
     width: 50%;
     min-height: 100px
 }
@@ -752,7 +745,6 @@ body>footer .details h4 a, .post-footer .details h4 a {
 body>footer #user_bio, .post-footer #user_bio {
     display: inline-block;
     vertical-align: middle;
-    zoom: 1;
     width: 49%
 }
 body>footer #user_bio .inner, .post-footer #user_bio .inner {
@@ -977,7 +969,6 @@ body.touch.user article .readmore {
         margin-top: 0;
         display: inline-block;
         vertical-align: middle;
-        zoom: 1;
     }
     html[dir=rtl] body.user>#blog_badge span {
         margin-left: 0;
