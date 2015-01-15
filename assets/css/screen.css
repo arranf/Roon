@@ -469,7 +469,7 @@ article .text>div {
     margin-bottom: 30px
 }
 article .text iframe, article .text object {
-    margin: 0 auto 30px auto !important
+    margin: 0 auto 30px auto
 }
 article .text object {
     display: block
@@ -840,8 +840,8 @@ article.image {
     line-height: 1.7em;
     margin: 0 5px 0 0
 }
-.user article .text pre, .user article .text img, .user article .text table, .user article .text hr, .user article .text iframe, .user article .text object, .user article .text audio, .user article .text video, .user article .text embed, .user article .text h1, .user article .text h2, .user article .text h3, .user article .text h4, .user article .text h5, .user article .text h6, .user article .text div.gist {
-    display: none !important
+.user article .text pre, .user article .text img, .user article .text table, .user article .text hr, .user article .text iframe, .user article .text object, .user article .text audio, .user article .text video, .user article .text embed, .user article .text h1, .user article .text h2, .user article .text h3, .user article .text h4, .user article .text h5, .user article .text h6, .user article .text div.gist { /* This keeps non-text stuff from displaying on article lists */
+    display: none
 }
 .user article .text blockquote {
     display: inline;
@@ -1236,7 +1236,7 @@ body>iframe {
         margin-top: 60px
     }
     .user article.feature {
-        margin-top: 0px !important
+        margin-top: 0px
     }
     .user article.feature .wrap {
         background: linear-gradient(rgba(33, 39, 45, 0.1) 5%, rgba(33, 39, 45, 0.85) 75%)
@@ -1272,7 +1272,7 @@ body>iframe {
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
-        float: none !important
+        float: none
     }
     #post_next {
         text-align: left;
@@ -1362,7 +1362,7 @@ body>iframe {
     }
     article .text blockquote p {
         font-size: 18px;
-        line-height: 1.5em !important
+        line-height: 1.5em
     }
     article.image {
         margin-top: 30px
@@ -1384,10 +1384,10 @@ body>iframe {
         margin-bottom: 20px
     }
     .user article .text iframe {
-        margin-bottom: 20px !important
+        margin-bottom: 20px
     }
     .user article .text object {
-        margin-top: 20px !important
+        margin-top: 20px
     }
     .user article:last-of-type {
         margin-bottom: 60px
