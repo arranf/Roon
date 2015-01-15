@@ -409,7 +409,7 @@ article {
     max-width: 680px;
     text-align: left
 }
-article #home_link {
+#home_link {
     font-family: 'Pictos Custom';
     color: #909396;
     margin-right: 10px;
@@ -421,7 +421,7 @@ article #home_link {
     border-radius: 20px;
 	float: left;
 }
-article #home_link:hover {
+#home_link:hover {
     color: #21272d;
     background-color: #ededee
 }
@@ -695,21 +695,21 @@ article>menu .btn span {
 article>menu .btn strong {
     display: none
 }
-article>menu #btn_share {
+#btn_share {
     font-weight: normal;
     height: 54px;
     width: 54px;
     padding: 0;
     font-family: "Open Sans", "Helvetica Neue", "Helvetica-Neue", helvetica, sans-serif
 }
-article>menu #btn_share span {
+#btn_share span {
     padding-top: 27px;
     margin-left: 2px
 }
-article>menu #btn_comment {
+#btn_comment {
     padding-right: 22px
 }
-article>menu #btn_comment span {
+#btn_comment span {
     font-weight: normal;
     margin-right: 6px;
     padding-top: 2px
@@ -867,7 +867,7 @@ article.image {
     height: 500px;
     max-width: 980px
 }
-.user>#load_more {
+#load_more {
     margin-bottom: 100px
 }
 #post_nav {
@@ -965,7 +965,7 @@ body>footer>.inner, .post-footer>.inner {
     padding: 0 30px;
     max-width: 680px
 }
-body>footer #btn_feed, .post-footer #btn_feed {
+#btn_feed {
     position: absolute;
     top: -18px;
     left: 50%;
@@ -978,21 +978,22 @@ body>footer #btn_feed, .post-footer #btn_feed {
     padding: 9px 9px 7px 10px;
     font-weight: normal
 }
-body>footer #btn_feed strong, .post-footer #btn_feed strong {
+#btn_feed strong {
     display: none
 }
-body>footer #btn_feed:hover, .post-footer #btn_feed:hover {
+#btn_feed:hover {
     background-color: #ededee;
     color: #21272d
 }
-body>footer div.vcard, .post-footer div.vcard {
+.vcard {
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
     width: 50%;
     min-height: 100px
 }
-body>footer div.vcard span.given-name, body>footer div.vcard span.family-name, .post-footer div.vcard span.given-name, .post-footer div.vcard span.family-name {
+vcard .given-name,
+.vcard .family-name {
     white-space: nowrap
 }
 body>footer .photo, .post-footer .photo {
@@ -1049,13 +1050,13 @@ body>footer .details h4, .post-footer .details h4 {
 body>footer .details h4 a, .post-footer .details h4 a {
     color: #21272d
 }
-body>footer #user_bio, .post-footer #user_bio {
+#user_bio {
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
     width: 49%
 }
-body>footer #user_bio .inner, .post-footer #user_bio .inner {
+#user_bio .inner {
     padding-left: 20px;
     line-height: 1.6em;
     color: #a4adb6
@@ -1133,15 +1134,15 @@ html[dir=rtl] #blog_badge span {
     margin-left: 0;
     margin-right: 17px
 }
-html[dir=rtl] article>header #home_link {
+html[dir=rtl] #home_link {
     margin-left: 10px;
     margin-right: 0
 }
-html[dir=rtl] article>menu #btn_comment {
+html[dir=rtl] #btn_comment {
     padding-left: 22px;
     padding-right: 20px
 }
-html[dir=rtl] article>menu #btn_comment span {
+html[dir=rtl] #btn_comment span {
     margin-left: 6px;
     margin-right: 0;
     direction: ltr
@@ -1300,21 +1301,21 @@ body>iframe {
         left: 10px;
         right: inherit
     }
-    body>footer #user_bio, body>footer #user_profile, .post-footer #user_bio, .post-footer #user_profile {
+    #user_bio, #user_profile {
         display: block;
         width: inherit
     }
-    body>footer #user_bio .inner, body>footer #user_profile .inner, .post-footer #user_bio .inner, .post-footer #user_profile .inner {
+    #user_bio .inner, #user_profile .inner {
         padding-left: 0
     }
-    body>footer div.vcard, body>footer div.vcard, .post-footer div.vcard, .post-footer div.vcard {
+    body>footer .vcard, .post-footer .vcard {
         display: block;
         width: inherit
     }
-    body>footer #user_bio, .post-footer #user_bio {
+    #user_bio {
         margin-top: 30px
     }
-    body>footer #user_bio p, .post-footer #user_bio p {
+    #user_bio p {
         padding-left: 0
     }
 }
