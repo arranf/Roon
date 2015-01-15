@@ -352,7 +352,8 @@ body.noimage {
     height: 60%;
     background: #909396 url(/assets/images/image-loading-dark-1a46c68c8e26a1a16a4ce8e4d75ec33b.gif) no-repeat center center
 }
-#feature_image .inner, #feature_image #feature_image_helper {
+#feature_image .inner,
+#feature_image_helper {
     position: absolute;
     top: 0;
     left: 0;
@@ -362,7 +363,8 @@ body.noimage {
     transition-duration: 0.5s;
     opacity: 0
 }
-#feature_image .inner, #feature_image #feature_image_helper .bg {
+#feature_image .inner,
+feature_image_helper .bg {
     transition-property: opacity;
     transition-duration: 0.5s;
     background-color: transparent;
@@ -370,19 +372,19 @@ body.noimage {
     background-position: center center;
     background-size: cover
 }
-#feature_image #feature_image_helper {
+#feature_image_helper {
     display: none
 }
-#feature_image #feature_image_helper .bg {
+#feature_image_helper .bg {
     width: 100%;
     height: 100%;
     opacity: 0.2
 }
-#feature_image.vert .inner, #feature_image.square .inner {
+#feature_image .inner {
     background-size: contain;
     transition-duration: 0.2s
 }
-#feature_image.vert #feature_image_helper, #feature_image.square #feature_image_helper {
+#feature_image_helper {
     display: block
 }
 #feature_image.show {
@@ -397,7 +399,7 @@ body.noimage {
     visibility: hidden;
     position: absolute
 }
-#feature_image.show.vert #feature_image_helper, #feature_image.show.square #feature_image_helper {
+#feature_image_helper {
     background-color: #909396;
     opacity: 1
 }
@@ -904,20 +906,20 @@ body.user>#load_more {
     transition-property: color;
     transition-duration: 0.2s
 }
-#post_nav #post_next {
+#post_next {
     float: left
 }
-#post_nav #post_next span {
+#post_next span {
     margin-right: 2px;
     transform: rotate(180deg) translate(0, 6px)
 }
-#post_nav #post_prev {
+#post_prev {
     position: relative;
     float: right;
     margin-top: 1px;
     padding: 5px 30px 5px 0
 }
-#post_nav #post_prev span {
+#post_prev span {
     position: absolute;
     right: 0;
     margin-top: -5px
@@ -1107,10 +1109,14 @@ body>.no-posts [data-icon]:before {
     text-align: right;
     direction: rtl
 }
-html[dir=rtl] body>header *, html[dir=rtl] article>menu a#btn_comment, html[dir=rtl] #post_nav a {
+html[dir=rtl] body>header *, html[dir=rtl] article>menu #btn_comment, html[dir=rtl] #post_nav a {
     direction: rtl
 }
-html[dir=rtl] body>a.btn.nav span, html[dir=rtl] body>footer #btn_feed span, html[dir=rtl] .post-footer #user_profile>#btn_feed span, html[dir=rtl] #post_nav a span, html[dir=rtl] article>header a#home_link {
+html[dir=rtl] body>a.btn.nav span,
+html[dir=rtl] #btn_feed span,
+html[dir=rtl] #btn_feed span,
+html[dir=rtl] #post_nav a span,
+html[dir=rtl] #home_link {
     direction: ltr;
     unicode-bidi: bidi-override
 }
@@ -1143,14 +1149,14 @@ html[dir=rtl] article>menu a#btn_comment span {
 html[dir=rtl] #post_nav nav {
     text-align: right
 }
-html[dir=rtl] #post_nav nav #post_prev {
+html[dir=rtl] #post_prev {
     float: none
 }
-html[dir=rtl] #post_nav nav #post_next {
+html[dir=rtl] #post_next {
     padding-top: 4px;
     margin-top: -4px
 }
-html[dir=rtl] #post_nav nav #post_next span {
+html[dir=rtl] #post_next span {
     float: left;
     margin-top: -5px;
     margin-right: 6px
@@ -1185,10 +1191,10 @@ body.touch.user article .readmore {
     }
 }
 @media only screen and (max-width: 860px), screen and (max-height: 600px) {
-    #feature_image.show.vert #feature_image_helper .bg, #feature_image.show.square #feature_image_helper .bg, #feature_image.vert #feature_image_helper .bg, #feature_image.square #feature_image_helper .bg {
+    #feature_image_helper .bg {
         opacity: 1
     }
-    #feature_image.show.vert .inner, #feature_image.show.square .inner, #feature_image.vert .inner, #feature_image.square .inner {
+    #feature_image .inner {
         opacity: 0
     }
 }
@@ -1268,18 +1274,18 @@ body.touch.user article .readmore {
         margin-right: auto;
         float: none !important
     }
-    #post_nav #post_next {
+    #post_next {
         text-align: left;
         margin-bottom: 20px
     }
-    #post_nav #post_prev {
+    #post_prev {
         text-align: right;
         position: relative;
         padding-right: 30px;
         padding-bottom: 5px;
         padding-top: 4px
     }
-    #post_nav #post_prev span {
+    #post_prev span {
         top: -1px;
         margin-top: 0;
         display: inline-block;
