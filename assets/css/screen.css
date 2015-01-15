@@ -5,7 +5,7 @@ a {
 
 /* Border at the top of the page */
 body>header,
-.noimage {
+body.noimage {
     border-color: #6ba7a5;
 }
 
@@ -342,7 +342,7 @@ body>header h1 {
 body>header h1 a {
     color: #21272d
 }
-.noimage {
+body.noimage {
     border-top-width: 4px;
     border-top-style: solid;
 }
