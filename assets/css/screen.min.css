@@ -284,7 +284,6 @@ body::-webkit-selection, body::-moz-selection, body::-o-selection, body::selecti
 }
 a {
     text-decoration: none;
-    outline: none;
     -webkit-transition-property: background-color, color;
     -moz-transition-property: background-color, color;
     -o-transition-property: background-color, color;
@@ -296,9 +295,6 @@ a {
 }
 a:hover {
     color: #6ba7a5
-}
-a:active {
-    outline: none
 }
 [data-icon]:before {
     font-family: "Pictos Custom";
