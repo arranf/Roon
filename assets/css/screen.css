@@ -326,7 +326,7 @@ hr {
 }
 .btn:hover {
     background-color: #6ba7a5;
-    color: #fff
+    color: #fff;
 	text-decoration: none;
 }
 body>header {
