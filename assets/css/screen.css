@@ -1071,8 +1071,6 @@ body>footer #user_bio .inner, .post-footer #user_bio .inner {
     z-index: 3;
     transition-property: all 0.2s;
 }
-#blog_badge:hover {
-}
 #blog_badge span {
     font-size: 1px;
     color: transparent;
