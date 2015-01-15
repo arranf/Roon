@@ -838,7 +838,6 @@ article.image {
 .user article .text p {
     display: inline;
     line-height: 1.7em;
-    margin: 0 5px 0 0
 }
 .user article .text pre, .user article .text img, .user article .text table, .user article .text hr, .user article .text iframe, .user article .text object, .user article .text audio, .user article .text video, .user article .text embed, .user article .text h1, .user article .text h2, .user article .text h3, .user article .text h4, .user article .text h5, .user article .text h6, .user article .text div.gist { /* This keeps non-text stuff from displaying on article lists */
     display: none
@@ -846,7 +845,6 @@ article.image {
 .user article .text blockquote {
     display: inline;
     padding: 0;
-    margin: 0 5px 0 0;
     border: none;
     font-size: inherit
 }
