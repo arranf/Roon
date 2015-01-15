@@ -1624,20 +1624,16 @@ body.touch.user article .readmore {
   display: table;
   clear: both;
 }
-
 .meta, /* make tags look like dates */
 .meta a {
 	color: #a4adb6;
 }
-
 .meta a:hover { /* need to reapply a:hover color */
 	color: #6ba7a5;
 }
-
 .user footer { /* gray footer on homepage */
 	background-color: #ededee;
 }
-
 article .hgroup { /* layout home button 'breadcrumb' on articles */
 	border-left: 1px solid #ededee;
 	padding-left: 20px;
