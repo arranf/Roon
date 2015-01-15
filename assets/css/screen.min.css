@@ -397,6 +397,8 @@ article>header .meta {
     display: inline-block;
     vertical-align: middle;
     zoom: 1;
+	margin-top: 10px;
+
 }
 article>header .count {
     font-size: 14px;
