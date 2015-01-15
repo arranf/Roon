@@ -1771,10 +1771,6 @@ body.user>header h1 {
     padding: 80px 0 10px;
 }
 
-body > footer div.vcard {
-	vertical-align: top;
-}
-
 /* CLEARFIX */
 .group:after {
   content: "";
