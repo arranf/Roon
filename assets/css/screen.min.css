@@ -341,9 +341,6 @@ body>header h1 {
     font-size: 36px;
     font-weight: bold
 }
-body>header h1 a {
-    color: #21272d
-}
 body.noimage {
     border-top-width: 4px;
     border-top-style: solid;
