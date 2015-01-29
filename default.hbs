@@ -26,13 +26,30 @@
     {{{body}}}
 
     {{! Ghost outputs important scripts and data with this tag }}
-    {{! ghost_foot}}
+    {{ghost_foot}}
 
 	{{#is 'post'}}
 		{{! Prism syntax highlighting JS file}}
 		<script type="text/javascript" src="{{asset "js/prism.min.js"}}"></script>
 	{{/is}}
-	{{! For buster }}
+	
+	{{#is 'page'}}
+		<script src="{{asset "js/jquery.swiftype.autocomplete.js"}}"></script>
+		<script src="{{asset "js/jquery.ba-hashchange.min.js"}}"></script>
+		<script src="{{asset "js/jquery.swiftype.search.js"}}"></script>
+
+		<script type="text/javascript">
+			$("#st-search-input").swiftype({
+				engineKey: "sg3kn6rAnozjxvM4k8nk"
+			});
+			$("#st-search-input").swiftypeSearch({
+				engineKey: "sg3kn6rAnozjxvM4k8nk",
+				resultContainingElement: "#st-results-container"
+			});
+		</script>
+	{{/is}}
+
+	{{! For HTTbuster }}
 	<aside style="display:none;">
 		<a href="/sitemap.xml">sitemap.xml</a>
 		<a href="/sitemap-pages.xml">sitemap-pages.xml</a>
