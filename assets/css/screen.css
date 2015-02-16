@@ -445,7 +445,6 @@ body.user>header .banner_feature {
 	background-image: url('/assets/feature_banner.jpeg');
 	background-repeat: no-repeat;
 	background-position: top center;
-	background-color: #eeeeee;
 	background-size: cover;
     display: inline-block;
     vertical-align: middle;
