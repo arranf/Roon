@@ -28,14 +28,14 @@
             <!--sse-->
 			<div id="disqus_thread"></div>
 			<script type="text/javascript">
-				var disqus_shortname = 'iyware';
+				var disqus_shortname = 'shouldertheboulder';
 				(function() {
 					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 				})();
 			</script>
-			<noscript><p style="text-align:center;"><small>Please enable JavaScript to view the <a href="https://disqus.com/home/forums/iyware/">comments powered by Disqus.</a></small></p></noscript>
+			<noscript><p style="text-align:center;"><small>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></small></p></noscript>
 			<!--/sse-->
         </div>
 
@@ -43,13 +43,13 @@
         <footer class="post-footer" role="contentinfo">
 
             <div class="vcard">
-                <a href="/rss/" id="btn_feed" class="btn" title="Feed">
+                <a href="http://feeds.feedsnap.com/shouldertheboulder" id="btn_feed" class="btn" title="Feed">
                     <span aria-hidden="true" data-icon=")"></span>
                     <strong>Feed</strong>
                 </a>
 
                 {{#if image}}
-                <a href="/" class="photo">
+                <a href="{{@blog.url}}" class="photo">
                     <span style="background-image: url('{{image}}');">
                         <img src="{{image}}" alt="{{name}}">
                     </span>
@@ -57,10 +57,9 @@
                 {{/if}}
 
                 <div class="details">
-                    <h4><a href="/" class="url n">{{name}}</a></h4>
-                    <!--sse--><span>danny &#64; iyware.com</span><br/><!--/sse-->
-                    <span>License: <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></span><br/>
-                    {{#if location}}{{location}}{{/if}}
+                    <h4><a href="{{url}}" class="url n">{{name}}</a></h4>
+                    {{#if location}}{{location}}<br>{{/if}}
+                    {{#if website}}<a href="{{website}}" class="js-remove-domain-schema">{{website}}</a>{{/if}}
               
                 </div>
             </div>

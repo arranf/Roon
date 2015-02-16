@@ -1,25 +1,19 @@
 <footer role="contentinfo">
     <div class="inner">
         <div class="vcard">
-            <a href="/rss/" id="btn_feed" class="btn" title="Feed">
+            <a href="http://feeds.feedsnap.com/shouldertheboulder" id="btn_feed" class="btn" title="Feed">
                 <span aria-hidden="true" data-icon=")"></span>
                 <strong>Feed</strong>
             </a>
 
             <div class="details">
-                <h4><a href="/" class="url n">{{@blog.title}}</a></h4>
-                info &#64; iyware.com<br>
-                <span>&copy; <a href="/" class="js-remove-domain-schema">iyware.com</a></span>
-            </div>
+                <h4><a href="{{@blog.url}}" class="url n">{{@blog.title}}</a></h4>
+                <a href="{{@blog.url}}" class="js-remove-domain-schema">{{@blog.url}}</a><br>
+                </div>
         </div>
         <div id="user_bio">
             <div class="inner">
-				{{! archive footer ad }}
-				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-5811335018322110" data-ad-slot="7085884247"></ins>
-				<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
+				{{@blog.description}}
             </div>
         </div>
     </div>
