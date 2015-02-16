@@ -1,6 +1,6 @@
 /* Link colour */
 a {
-    color: #90bdbc;
+    color: #EE7624;
 }
 
 /* Border at the top of the page */
@@ -671,7 +671,7 @@ body>footer #btn_feed strong, .post-footer #btn_feed strong {
 }
 body>footer #btn_feed:hover, .post-footer #btn_feed:hover {
     background-color: #ededee;
-    color: #21272d
+    color: #EE7624
 }
 body>footer div.vcard, .post-footer div.vcard {
     display: inline-block;
