@@ -1,12 +1,12 @@
 /* Link colour */
 a {
-    color: #EE7624;
+    color: #FC954F;
 }
 
 /* Border at the top of the page */
 body>header,
 body.noimage {
-    border-color: #6ba7a5;
+    border-color: #FC954F;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -99,7 +99,7 @@ a:active {
 	outline: medium none;
 }
 a:hover {
-    color: #6ba7a5
+    color: #FC954F
 }
 [data-icon]:before {
     font-family: "Pictos Custom";
@@ -124,7 +124,7 @@ hr {
     border-radius: 50px;
 }
 .btn:hover {
-    background-color: #6ba7a5;
+    background-color: #FC954F;
     color: #fff
 }
 body>header {
