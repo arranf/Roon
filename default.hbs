@@ -35,9 +35,9 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.min.css"}}" />
 	<link rel="alternate" type="application/rss+xml" title="Shoulder the Boulder" href="http://feeds.feedsnap.com/shouldertheboulder">
-
-    {{! Ghost outputs important style and meta data with this tag }}
-    {{ghost_head}}
+	<link rel="canonical" href="http://shouldertheboulder.com/">
+	<meta name="generator" content="Ghost 0.5">
+	<style type="text/css"></style>
 </head>
 <body class="{{body_class}} {{#is 'index, tag, author'}}user{{/is}} {{#is 'post, page'}}{{#unless post.image}}noimage{{/unless}}{{/is}}">
 
