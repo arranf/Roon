@@ -665,9 +665,9 @@ body>footer #btn_feed, .post-footer #btn_feed {
     margin-left: -17px;
     text-align: center;
     font-size: 16px;
-    background-color: #fff;
+    background-color: #FC954F;
     border: 1px solid #ededee;
-    color: #909396;
+    color: #fff;
     padding: 9px 9px 7px 10px;
     font-weight: normal
 }
@@ -675,8 +675,8 @@ body>footer #btn_feed strong, .post-footer #btn_feed strong {
     display: none
 }
 body>footer #btn_feed:hover, .post-footer #btn_feed:hover {
-    background-color: #ffffff;
-    color: #FC954F;
+    background-color: #FC954F;
+    color: #fff;
 }
 body>footer div.vcard, .post-footer div.vcard {
     display: inline-block;
