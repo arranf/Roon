@@ -426,7 +426,6 @@ article.image {
 body.user>header {
     position: relative;
 	margin-bottom: 0;
-	padding-bottom: 60px;
 	background-color: #eeeeee;
 }
 body.user>header .bannertextfeature {
