@@ -429,19 +429,14 @@ body.user>header {
     position: relative;
 	margin-bottom: 0;
 	padding-bottom: 60px;
+	background-color: #eeeeee;
 }
-
 body.user>header .wrap {
-    display: -moz-inline-stack;
     display: inline-block;
     vertical-align: middle;
-    *vertical-align: auto;
-    zoom: 1;
-    *display: inline;
     text-align: center;
     margin: 0 auto
 }
-
 body.user>header h1 {
 	padding: 80px 0 10px;
 }
@@ -919,10 +914,6 @@ body.touch.user article .readmore {
         margin-top: 0px 
     }
     body.user article.feature .wrap {
-		background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(5%, rgba(33, 39, 45, 0.1)), color-stop(75%, rgba(33, 39, 45, 0.85)));
-        background: -webkit-linear-gradient(rgba(33, 39, 45, 0.1) 5%, rgba(33, 39, 45, 0.85) 75%);
-        background: -moz-linear-gradient(rgba(33, 39, 45, 0.1) 5%, rgba(33, 39, 45, 0.85) 75%);
-        background: -o-linear-gradient(rgba(33, 39, 45, 0.1) 5%, rgba(33, 39, 45, 0.85) 75%);
         background: linear-gradient(rgba(33, 39, 45, 0.1) 5%, rgba(33, 39, 45, 0.85) 75%)
     }
     body.user article .image-holder {
@@ -1085,10 +1076,6 @@ body.touch.user article .readmore {
         padding: 0 20px
     }
     body.user article.feature .wrap {
-        background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(33, 39, 45, 0.25)), color-stop(75%, rgba(33, 39, 45, 0.9)));
-        background: -webkit-linear-gradient(rgba(33, 39, 45, 0.25) 0%, rgba(33, 39, 45, 0.9) 75%);
-        background: -moz-linear-gradient(rgba(33, 39, 45, 0.25) 0%, rgba(33, 39, 45, 0.9) 75%);
-        background: -o-linear-gradient(rgba(33, 39, 45, 0.25) 0%, rgba(33, 39, 45, 0.9) 75%);
         background: linear-gradient(rgba(33, 39, 45, 0.25) 0%, rgba(33, 39, 45, 0.9) 75%)
     }
     #blog_badge {
