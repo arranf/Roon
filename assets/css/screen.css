@@ -430,7 +430,6 @@ body.user>header {
     position: relative;
 	margin-bottom: 0;
 	padding-bottom: 60px;
-	background-color: #ededee;
 }
 body.user>header .wrap {
     display: inline-block;
@@ -673,8 +672,8 @@ body>footer #btn_feed strong, .post-footer #btn_feed strong {
     display: none
 }
 body>footer #btn_feed:hover, .post-footer #btn_feed:hover {
-    background-color: #ededee;
-    color: #21272d
+    background-color: #ffffff;
+    color: #FC954F;
 }
 body>footer div.vcard, .post-footer div.vcard {
     display: inline-block;
@@ -1124,10 +1123,6 @@ body.touch.user article .readmore {
 }
 .meta a:hover { /* need to reapply a:hover color */
 	color: #6ba7a5;
-}
-.user footer,
-.page footer { /* gray footer on homepage */
-	background-color: #ededee;
 }
 article .hgroup { /* layout home button 'breadcrumb' on articles */
 	border-left: 1px solid #ededee;
