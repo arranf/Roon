@@ -99,7 +99,7 @@ a:active {
 	outline: medium none;
 }
 a:hover {
-    color: #6ba7a5
+    color: #FC954F
 }
 [data-icon]:before {
     font-family: "Pictos Custom";
@@ -516,7 +516,7 @@ body.user article .readmore {
     transition-duration: 0.5s
 }
 body.user article .readmore:hover {
-    color: #6ba7a5
+    color: #FC954F
 }
 body.user article:hover .readmore {
     opacity: 1
@@ -1121,8 +1121,12 @@ body.touch.user article .readmore {
 .meta a {
 	color: #a4adb6;
 }
-.meta a:hover { /* need to reapply a:hover color */
-	color: #6ba7a5;
+.body a:hover { /* need to reapply a:hover color */
+	color: #FC954F;
+}
+
+.header a:hover { /* need to reapply a:hover color */
+	color: #FC954F;
 }
 article .hgroup { /* layout home button 'breadcrumb' on articles */
 	border-left: 1px solid #ededee;
@@ -1340,7 +1344,7 @@ pre[class*='language-'] > code[data-language] {
 }
 pre[class*='language-'] > code[data-language]::before {
 	content: attr(data-language);
-	color: #6ba7a5;
+	color: #FC954F;
 	background-color: #ededee;
 	display: inline-block;
 	position: absolute;
