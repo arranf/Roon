@@ -424,9 +424,7 @@ article.image {
     margin-top: 60px
 }
 body.user>header {
-    position: relative;
-	margin-bottom: 0;
-	padding-bottom: 60px;
+    margin-bottom: 0;
 	background-color: #eeeeee;
 }
 body.user>header .bannertextfeature {
@@ -442,13 +440,19 @@ body.user>header .bannertextfeature {
 }
 body.user>header .bannerfeatureimage {
 	max-height: 470px;
-		background-color: #eeeeee;
+	background-color: #eeeeee;
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    text-indent: -9999px; }
     display: inline-block;
     vertical-align: middle;
-    text-align: center;
     margin: 0 auto
 }
 body.user>header .wrap {
