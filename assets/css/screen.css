@@ -442,7 +442,7 @@ body.user>header .text_feature {
 body.user>header .banner_feature {
 	max-height: 470px;
 	height: 150px;
-	background-image: url('/assets/feature_banner.jpeg');
+	background-image: url('{{@blog.cover}}');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-color: #eeeeee;
