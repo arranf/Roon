@@ -138,6 +138,9 @@ body>header h1 {
 body>header h1 a {
     color: #21272d
 }
+body>header h1 a:hover {
+    color: #21272d
+}
 body.noimage {
     border-top-width: 4px;
     border-top-style: solid;
@@ -1121,13 +1124,10 @@ body.touch.user article .readmore {
 .meta a {
 	color: #a4adb6;
 }
-.body a:hover { /* need to reapply a:hover color */
+.meta a:hover { /* need to reapply a:hover color */
 	color: #FC954F;
 }
 
-.header a:hover { /* need to reapply a:hover color */
-	color: #FC954F;
-}
 article .hgroup { /* layout home button 'breadcrumb' on articles */
 	border-left: 1px solid #ededee;
 	padding-left: 20px;
