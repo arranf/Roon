@@ -429,29 +429,6 @@ body.user>header {
 	padding-bottom: 60px;
 	background-color: #eeeeee;
 }
-body.user>header .text_feature {
-    font-weight: 300;
-	font-size: 30px;
-	margin-top: 10px;
-	margin-bottom: 0;
-	display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    margin: 0 auto
-}
-body.user>header .banner_feature {
-	max-height: 470px;
-	height: 150px;
-	background-image: url('{{@blog.cover}}');
-	background-repeat: no-repeat;
-	background-position: top center;
-	background-color: #eeeeee;
-	background-size: cover;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    margin: 0 auto
-}
 body.user>header .wrap {
     display: inline-block;
     vertical-align: middle;
