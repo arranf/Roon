@@ -429,20 +429,20 @@ body.user>header {
 	padding-bottom: 60px;
 	background-color: #eeeeee;
 }
-body.user>header .bannertextfeature {
+body.user>header .text_feature {
     font-weight: 300;
 	font-size: 30px;
 	margin-top: 10px;
 	margin-bottom: 0;
-	position: relative;
 	display: inline-block;
     vertical-align: middle;
     text-align: center;
     margin: 0 auto
 }
-body.user>header .bannerfeatureimage {
+body.user>header .banner_feature {
 	max-height: 470px;
-		background-color: #eeeeee;
+	height: 150px;
+	background-image: url('/assets/feature_banner.jpeg');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
