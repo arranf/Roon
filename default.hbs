@@ -49,7 +49,6 @@
 
 	{{#is 'post'}}
 		{{! Prism syntax highlighting JS file}}
-		<script type="text/javascript" src="{{asset "js/prism.min.js"}}"></script>
 		 <script>
 		 function reading_time () {
                 var post_content = document.getElementById('js-post-content');
@@ -61,7 +60,8 @@
                     document.getElementById('js-reading-time').appendChild(read_time_node);
                 }
             }
-			</script>
+		</script>
+		<script type="text/javascript" src="{{asset "js/prism.min.js"}}"></script>
 	{{/is}}
 	
 	{{#is 'page'}}
