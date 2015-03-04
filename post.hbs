@@ -19,6 +19,8 @@
             		<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
             		&nbsp;&bull;&nbsp;
 					<span class="tags">{{tags}}</span>
+					&nbsp;&bull;&nbsp;
+					<span class="count" id="js-reading-time"></span>
             	</div>
 			</div>
         </header>
@@ -75,13 +77,6 @@
     {{/author}}
 
     </article>
-    {{! post footer ad }}
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<ins class="adsbygoogle" style="display:inline-block;width:320px;height:100px" data-ad-client="ca-pub-5811335018322110" data-ad-slot="8562617448"></ins>
-	<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-
 {{/post}}
 
 {{!-- TODO: Add next/prev posts --}}
