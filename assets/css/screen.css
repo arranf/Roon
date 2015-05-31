@@ -58,6 +58,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
          url("/assets/fonts/inconsolata.woff") format("woff");
     font-weight: normal;
     font-style: normal
+  font-family: "Alegreya Sans SC";
+  src: url("/assets/fonts/Alegreya-Sans-regular.woff2) format("woff2"),
+       url("/assets/fonts/Alegreya-Sans-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
   font-family: "Open Sans";
