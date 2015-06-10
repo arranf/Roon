@@ -17,16 +17,17 @@
             <div class="details">
                 <h4><a href="{{@blog.url}}" class="url n">{{@blog.title}}</a></h4>
                 <a href="{{@blog.url}}" class="js-remove-domain-schema">{{@blog.url}}</a><br>
-                {{@blog.description}}
                 </div>
         </div>
         <div id="user_bio">
             <div class="inner">
-                                                <p>
+                {{@blog.description}}
+                <br>
+                <p>
                  <a href="/about">About</a> |
                  <a href="/contact">Contact </a>
                  </p>
-                <br />
+                <br>
 <span class="details">hosted with ❤ by BricksandMortar</span>
             </div>
         </div>
