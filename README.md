@@ -1,3 +1,8 @@
+# Note:
+
+This repository is now deprecated as Shoulder the Boulder is now powered by Rock rather than Ghost.
+
+--
 # Roon
 
 The Roon theme for [Ghost](http://github.com/tryghost/ghost/).
